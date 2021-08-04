@@ -1,8 +1,8 @@
 # Vue-I18n memory leak
-This repository is to demonstrate the memory leak described in kazupon/vue-i18n#1225.
+This repository is to demonstrate the memory leak described in [kazupon/vue-i18n#1225](https://github.com/kazupon/vue-i18n/issues/1225).
 
 When Vue-I18n is used in a SSR context, not all lifecycles are called.
-A previous optimization in kazupon/vue-i18n#572 improved SSR compatibility quite a bit.
+A previous optimization in [kazupon/vue-i18n#572](https://github.com/kazupon/vue-i18n/pull/572) improved SSR compatibility quite a bit.
 
 Since the components in this repository are not that complex, the node process won't crash.
 But in a production environment with a more complex project this did happen.
